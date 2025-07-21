@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('/assets/components/navbar.html')
+    fetch('../assets/components/navbar.html')
         .then(response => response.text())
         .then(data => {
             const navbarContainer = document.getElementById('divCanopy');
