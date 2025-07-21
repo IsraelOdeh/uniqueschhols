@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('../assets/components/navbar.html')
+    fetch('./../assets/components/navbar.html')
         .then(response => response.text())
         .then(data => {
             const navbarContainer = document.getElementById('divCanopy');
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error loading navbar:', error));
 
-    fetch('../assets/components/footer.html')
+    fetch('./../assets/components/footer.html')
         .then(response => response.text())
         .then(data => {
             const footerContainer = document.getElementById('footCanopy');
