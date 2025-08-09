@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 const scrollElement = document.getElementById('scrollElement');
+                const scrollTitle = document.getElementById('scrollTitle');
+
                 let lastScrollTop = 0;
                 window.addEventListener('scroll', () => {
                     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -16,11 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         scrollElement.classList.add('opacity-0');
                         scrollElement.classList.add('h-[60px]');
                         scrollElement.classList.remove('h-[90px]');
+
+                        scrollTitle.classList.add('opacity-0');
+                        scrollTitle.classList.add('h-[60px]');
+                        scrollTitle.classList.remove('h-[90px]');
                     } else {
                         // Scrolling up
                         scrollElement.classList.remove('opacity-0');
                         scrollElement.classList.remove('h-[60px]');
                         scrollElement.classList.add('h-[90px]');
+
+                        scrollTitle.classList.remove('opacity-0');
+                        scrollTitle.classList.remove('h-[60px]');
+                        scrollTitle.classList.add('h-[90px]');
                     }
                     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
                 });
