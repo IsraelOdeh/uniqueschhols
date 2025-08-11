@@ -13,12 +13,12 @@
         <link rel="manifest" href="assets/images/site.webmanifest">
         <style>
             h1 {
-                font-size: 25px;
+                font-sze: 25px;
             }
         </style>
     </head>
 
-    <body class="bg-[#808080] font-sans overflow-x-hidden relative text-[25px]"
+    <body class="bg-[#808080] font-sans overflow-x-hidden relative text-[20px]"
         style="contain: style; background-color:#d9d9d9;">
         <!-- navigation -->
         <div id="divCanopy">
@@ -30,7 +30,7 @@
 
                 <!-- Welcome Section -->
                 <section class="mb-6 p-4   justify-items-center">
-                    <img src="./assets/images/proprietres.jpg" alt="Our Proprietress" class="h-[580px] ml-auto mr-auto">
+                    <img src="./assets/images/proprietres.jpg" alt="Our Proprietress" class="h-[480px] ml-auto mr-auto">
                     <div class="">
                         <h1 class="font-bold text-center text-primary">Welcome to our school!</h1>
                         <p class="text-center">
@@ -105,7 +105,7 @@
                         Learning). A serene and conducive environment for a well secured and competitive future</p>
                 </section>
 
-                <section class="mb-6 text-center bg-gray-800  text-white mt-[50px]">
+                <section class="pb-6 text-center bg-gray-800  text-white mt-[50px]">
                     <div class="py-[25px] px-4 border-solid border-b">
                         <h2 class="text-2xl font-bold mb-2 text-primary"> Early Years</h2>
                         <p class="text-center">Our Unique Children Model Academy offers a happy and fun place for the
@@ -129,11 +129,113 @@
                             Each year is its own phase and is carefully structured to nurture independence and develop a
                             lifelong love of learning.</p>
                     </div>
-                    <div class="py-[25px] px-4 border-solid border-b">
+                    <div class="py-[25px] px-4">
                         <h2 class="text-2xl font-bold mb-2 text-primary"> Secondary School</h2>
                         <p>There is a palpable buzz right across the Senior School as our excited and inspired learner
                             (aged 16 to 18) bounce into School to enjoy wonderful days packed with opportunities.</p>
                     </div>
+                </section>
+
+                <section class="pb-6 pt-[50px] bg-gray-800  text-white">
+                    <div>
+                        <div class="flex text-2xl font-bold text-primary justify-between w-[60%] px-[20px]"
+                            onclick="openAbout('mission')">
+                            <h2>Our Unique Mantra</h2>
+                            <span>
+                                <i id="missionShowing" class="fa-solid fa-plus text-primary"
+                                    style="font-size: 20px;"></i>
+                                <i id="missionHidden" class="fa-solid fa-minus hidden! text-primary"
+                                    style="font-size: 20px;"></i>
+                            </span>
+                        </div>
+                        <div class="hidden bg-gray-800 text-white transition-all duration-300" id="mission">
+                            <p class="text-center">
+                                Education is the key to unlocking the world. <br>
+                                Our passports to the future. <br>
+                                Our passports to freedom <br>
+                                Which begins in the classroom. <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- <section id="history">
+                            <h2 class="text-2xl font-bold text-primary text-center w-[70%] mx-auto">History</h2>
+                            <p class="text-center  md:w-[50%] ml-auto mr-auto">Founded in 1990, Our Unique Children
+                                Model Academy
+                                has been dedicated to nurturing and developing the
+                                potential of every child through innovative teaching methods and a supportive community.
+                            </p>
+                        </section> -->
+                        <div class="flex text-2xl font-bold text-primary justify-between w-[60%] px-[20px]"
+                            onclick="openAbout('anthem')">
+                            <h2 class="">Our Anthem</h2>
+                            <span>
+                                <i id="anthemShowing" class="fa-solid fa-plus"></i>
+                                <i id="anthemHidden" class="fa-solid fa-minus hidden!"></i>
+                            </span>
+                        </div>
+                        <div id="anthem" class="text-center hidden bg-gray-800 text-white transition-all duration-300">
+                            <b>Stanza 1</b><br>
+                            The Unique Children academy<br>
+                            We are future champions<br>
+                            Discipline Humility,<br>
+                            Knowledge, Wisdom, Obedience.<br><br>
+
+                            We are Unique (Kpa, Kpa)<br>
+                            We are Unique (Kpa, Kpa)<br>
+                            We are Unique. (Kpa, Kpa)<br>
+                            We are set to learn for life.<br><br>
+
+                            <b>Stanza 2</b><br>
+                            With God guidance we onward march<br>
+                            As we move from height to heights<br>
+                            Our future is great and bright<br>
+                            With a solid foundation.<br><br>
+
+                            We are Unique. (Kpa, Kpa)<br>
+                            We are Unique. (Kpa, Kpa)<br>
+                            We are Unique. (Kpa, Kpa)<br>
+                            We are set to learn for life<br>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <div class="flex text-2xl font-bold text-primary justify-between w-[60%] px-[20px]"
+                            onclick="openAbout('pledge')">
+                            <h2 class="text-2xl font-bold text-primary gap-[10px]">Our
+                                Unique Pledge
+                            </h2>
+                            <span>
+                                <i id="pledgeShowing" class="fa-solid fa-plus"></i>
+                                <i id="pledgeHidden" class="fa-solid fa-minus hidden!"></i>
+                            </span>
+                        </div>
+                        <div id="pledge" class="hidden bg-gray-800 text-white transition-all duration-300">
+                            <p class="text-center  md:w-[50%] ml-auto mr-auto">
+                                I pledge to our Unique Children Model Academy,<br>
+                                A citadel of learning.<br>
+                                To do my best in all locations.<br>
+                                I promise to obey the rules in my class and in our school.<br>
+                                To show respect and care about others<br>
+                                To be God fearing, discipline, hardworking and a team player<br>
+                                Through Academic and Moral excellence.<br>
+                                So help me God.<br>
+                                Amen.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Admission 2025 Section -->
+                <section class="mb-6 p-4 bg-gray-800 pt-[50px] text-white">
+                    <h2 class="text-2xl font-bold mb-2 text-primary text-center">Admission 2025</h2>
+                    <img src="assets/images/application.jpeg" alt="Admission Image"
+                        class="w-full h-[400px] object-cover mb-2">
+                    <p class="text-black">Apply now for the 2025 academic year.</p>
+                    <a href="./admissions.html">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">How to apply</button>
+                    </a>
                 </section>
 
                 <!-- Contact Us Section -->
@@ -178,17 +280,6 @@
                     </div>-->
                 </section>
 
-                <!-- Admission 2025 Section -->
-                <section class="mb-6 p-4 bg-gray-800 mt-[50px] text-white">
-                    <h2 class="text-2xl font-bold mb-2 text-primary text-center">Admission 2025</h2>
-                    <img src="assets/images/application.jpeg" alt="Admission Image"
-                        class="w-full h-[400px] object-cover mb-2">
-                    <p class="text-black">Apply now for the 2025 academic year.</p>
-                    <a href="./admissions.html">
-                        <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">How to apply</button>
-                    </a>
-                </section>
-
                 <!-- Gallery Section -->
                 <section class="mb-7 p-4 mt-[50px]">
                     <div class="elfsight-app-f37a9891-a0c7-42b5-8497-8a4f5afb54fa w-full" data-elfsight-app-lazy></div>
@@ -198,9 +289,15 @@
         </div>
         <div id="footCanopy"></div>
         <script>
+            function openAbout(field) {
+                const div = document.getElementById(field);
+                const divOpen = document.getElementById(field + 'Showing')
+                const divClose = document.getElementById(field + 'Hidden')
 
-
-
+                div.classList.toggle('hidden')
+                divOpen.classList.toggle('hidden!')
+                divClose.classList.toggle('hidden!')
+            }
             // Simple toggle for mobile menu
             document.addEventListener('DOMContentLoaded', function () {
                 // const menuToggle = document.getElementById('menu-toggle');

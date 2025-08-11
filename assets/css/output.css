@@ -292,6 +292,9 @@
   .hidden {
     display: none;
   }
+  .hidden\! {
+    display: none !important;
+  }
   .inline-block {
     display: inline-block;
   }
@@ -322,8 +325,8 @@
   .h-\[400px\] {
     height: 400px;
   }
-  .h-\[580px\] {
-    height: 580px;
+  .h-\[480px\] {
+    height: 480px;
   }
   .h-full {
     height: 100%;
@@ -333,9 +336,6 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-\[50\%\] {
-    width: 50%;
   }
   .w-\[60\%\] {
     width: 60%;
@@ -351,9 +351,6 @@
   }
   .w-\[140px\] {
     width: 140px;
-  }
-  .w-\[200px\] {
-    width: 200px;
   }
   .w-auto {
     width: auto;
@@ -420,6 +417,9 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -433,6 +433,9 @@
       margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .justify-self-center {
+    justify-self: center;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -483,9 +486,6 @@
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
-  .bg-primary {
-    background-color: var(--color-primary);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -507,6 +507,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-\[20px\] {
+    padding-inline: 20px;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -525,11 +528,17 @@
   .py-\[40px\] {
     padding-block: 40px;
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pt-\[70px\] {
     padding-top: 70px;
   }
   .pt-\[90px\] {
     padding-top: 90px;
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-\[25px\] {
     padding-bottom: 25px;
@@ -553,14 +562,6 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -591,9 +592,6 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
-  }
-  .text-gray-800 {
-    color: var(--color-gray-800);
   }
   .text-green-600 {
     color: var(--color-green-600);
@@ -767,6 +765,12 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .md\:block {
