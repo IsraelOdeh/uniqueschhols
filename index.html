@@ -11,6 +11,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
         <link rel="manifest" href="assets/images/site.webmanifest">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <style>
             h1 {
                 font-sze: 25px;
@@ -24,7 +25,7 @@
         <div id="divCanopy">
         </div>
 
-        <div id="main" class="transition-transform duration-300 mt-[90px]  ml-auto mr-auto mb-[760px]">
+        <div id="main" class="transition-transform duration-300 mt-[90px]  ml-auto mr-auto">
             <!--max-w-[1024px] Main Content container-->
             <div class=" mx-auto">
 
@@ -34,8 +35,7 @@
                         <div class="flex items-center justify-center">
                             <div
                                 class="content-center z-1 h-[130px] w-[130px] bg-[#79535f] line-height: 88px; text-center text-[40px] rounded-[50%] ">
-                                <i
-                                    class="fa fa-american-sign-language-interpreting hover:animate-bounce transition-all"></i>
+                                <i class="fa-solid fa-laptop-code  hover:animate-bounce transition-all"></i>
                             </div>
                             <div
                                 class="content-center bg-[#79535f] h-[81px] ml-[-46px] rounded-[32px] w-[70%] text-center">
@@ -86,9 +86,10 @@
                 </section>
 
                 <!-- Welcome Section -->
-                <section class="mb-6 p-4   justify-items-center">
-                    <img src="./assets/images/proprietres.jpg" alt="Our Proprietress" class="h-[480px] ml-auto mr-auto">
-                    <div class="">
+                <section class="mb-6 p-4   justify-items-center md:columns-2">
+                    <img src="./assets/images/proprietres.jpg" alt="Our Proprietress"
+                        class="md:h-auto h-[480px] ml-auto mr-auto">
+                    <div class="md:pt-4">
                         <h1 class="font-bold text-center text-primary">Welcome to our school!</h1>
                         <p class="text-center">
 
@@ -164,7 +165,7 @@
                     <div class="">
                         <div class=""></div>
                         <div class="">
-                            <div class="md:columns-2  lg:columns-4 bg-[blue] py-[54px] px-[40px]">
+                            <div class="md:columns-2  lg:columns-4 bg-gray-800 text-white py-[54px] px-[40px]">
                                 <div class="bg-[#92278f] h-[180px] content-center mb-[20px]">
                                     <div>
                                         <h2 class="text-[60px]">22</h2>
@@ -373,14 +374,94 @@
                 <!-- </section> -->
 
                 <!-- Gallery Section -->
-                <section class="mb-7 p-4 mt-[50px]">
+                <section class="mb-7 mt-[50px]">
                     <div class="elfsight-app-f37a9891-a0c7-42b5-8497-8a4f5afb54fa w-full" data-elfsight-app-lazy></div>
+
+                    <div class="relative bg-gray-800  text-white  px-[30px] pb-9">
+                        <div class="w-full absolute left-0 right-0 top-[-60px] z-[300000] h-[60px] bg-gray-800"> </div>
+                        <div class="text-center">
+                            <h2><span>WHAT</span> PEOPLE SAYS</h2>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Review 1 -->
+                                <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                    <p class="text-gray-700 italic">"Outstanding environment for learning, institution
+                                        ready to
+                                        set the pace"</p>
+                                    <h4 class="mt-4 font-bold text-lg">— Emma Odoh</h4>
+                                </div>
+                                <!-- Review 2 -->
+                                <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                    <p class="text-gray-700 italic">"The management are interested in the core
+                                        foundation of
+                                        education with attention to details."</p>
+                                    <h4 class="mt-4 font-bold text-lg">— Beatrice Kalu.</h4>
+                                </div>
+                                <!-- Review 3 -->
+                                <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                    <p class="text-gray-700 italic">"Etiam non elit nec augue tempor gravida et sed
+                                        velit.
+                                        Aliquam tempus eget lorem ut malesuada. Phasellus dictum est
+                                        sed libero posuere dignissim."
+                                    </p>
+                                    <h4 class="mt-4 font-bold text-lg">— Luise Henrikes.</h4>
+                                </div>
+                            </div>
+
+                            <!-- Pagination dots -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- Navigation buttons -->
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                        </div>
+                    </div>
+
                 </section>
             </div>
 
         </div>
+        <iframe class="w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.3171666570722!2d7.384082115033901!3d8.965774888739224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e732d6898c49d%3A0x3099ff1c8c922348!2sOur%20Unique%20Children%20Model%20Academy!5e0!3m2!1sen!2sng!4v1752626216964!5m2!1sen!2sng"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div id="footCanopy"></div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
+                //navigation: {
+                //    nextEl: ".swiper-button-next",
+                //    prevEl: ".swiper-button-prev",
+                //},
+            });
+
             function openAbout(field) {
                 const div = document.getElementById(field);
                 const divFoda = document.getElementById(field + 'Foda');
