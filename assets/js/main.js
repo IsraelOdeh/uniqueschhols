@@ -61,10 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error loading navbar:', error));
 
 
-
-
-
-
 });
 
 
@@ -114,3 +110,12 @@ function backToMain() {
 
 
 
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
