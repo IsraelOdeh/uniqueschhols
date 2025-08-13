@@ -16,6 +16,36 @@
             h1 {
                 font-sze: 25px;
             }
+
+            @layer utilities {
+                @keyframes sideToSide {
+                    0% {
+                        left: calc(0% - 50px);
+                    }
+
+                    100% {
+                        left: calc(100% - 50px);
+                    }
+                }
+
+                @keyframes rightToSide {
+                    0% {
+                        right: calc(0% - 50px);
+                    }
+
+                    100% {
+                        right: calc(100% - 50px);
+                    }
+                }
+
+                .animate-sideToSide {
+                    animation: sideToSide 5s ease-in-out infinite alternate;
+                }
+
+                .animate-rightToSide {
+                    animation: rightToSide 5s ease-in-out infinite alternate;
+                }
+            }
         </style>
     </head>
 
@@ -30,65 +60,63 @@
             <div class=" mx-auto">
 
                 <!----wHAT WE OFFER ----->
-                <section class="bg-gray-800 md:columns-2 mb-6 p-4 text-white">
-                    <div class="py-[10px]">
-                        <div class="flex items-center justify-center">
+                <section class="bg-gray-800 md:columns-2 mb-6 p-4 text-white"
+                    style="font-weight: 700; font-family: ui-rounded;">
+                    <div class="py-[17px]">
+                        <div class="items-center justify-center relative">
                             <div
-                                class="content-center z-1 h-[130px] w-[130px] bg-[#79535f] line-height: 88px; text-center text-[40px] rounded-[50%] ">
-                                <i class="fa-solid fa-laptop-code  hover:animate-bounce transition-all"></i>
+                                class="content-center z-1 h-[100px] w-[100px] bg-[#79535f] line-height: 88px; text-center text-[40px] absolute animate-sideToSide rounded-full top-[-23px]">
+                                <i class="fa-solid fa-laptop-code  hover:animate-bounce transition-all text-3xl"></i>
                             </div>
-                            <div
-                                class="content-center bg-[#79535f] h-[81px] ml-[-46px] rounded-[32px] w-[70%] text-center">
+                            <div class="content-center bg-[#79535f] h-[61px] rounded-[32px] text-center">
                                 <h4 class="services-title">ICT Trained</h4>
                                 <!-- <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="py-[10px]">
-                        <div class="flex items-center justify-center">
+                    <div class="py-[17px]">
+                        <div class="items-center justify-center relative">
                             <div
-                                class="content-center z-1 h-[130px] w-[130px] bg-[#340364] line-height: 88px; text-center text-[40px] rounded-[50%]">
-                                <i class="fa fa-book rs-animation-scale-up"></i>
+                                class="content-center z-1 h-[100px] w-[100px] bg-[#340364] line-height: 88px; text-center text-[40px] absolute animate-rightToSide rounded-full top-[-23px]">
+                                <i
+                                    class="fa fa-book rs-animation-scale-up hover:animate-bounce transition-all text-3xl"></i>
                             </div>
-                            <div
-                                class="content-center bg-[#340364] h-[81px] ml-[-46px] rounded-[32px] w-[70%] text-center">
+                            <div class="content-center bg-[#340364] h-[61px] rounded-[32px] text-center">
                                 <h4 class="services-title">Books &amp; Library</h4>
                                 <!-- <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="py-[10px]">
-                        <div class="flex items-center justify-center">
+                    <div class="py-[17px] inline-block w-full">
+                        <div class="items-center justify-center relative">
                             <div
-                                class="content-center z-1 h-[130px] w-[130px] bg-[#081577] line-height: 88px; text-center text-[40px] rounded-[50%]">
-                                <i class="fa fa-user rs-animation-scale-up"></i>
+                                class="content-center z-1 h-[100px] w-[100px] bg-[#081577] line-height: 88px; text-center text-[40px] absolute animate-sideToSide rounded-full top-[-23px]">
+                                <i
+                                    class="fa fa-user rs-animation-scale-up hover:animate-bounce transition-all text-3xl"></i>
                             </div>
-                            <div
-                                class="content-center bg-[#081577] h-[81px] ml-[-46px] rounded-[32px] w-[70%] text-center">
+                            <div class="content-center bg-[#081577] h-[61px]  rounded-[32px] text-center">
                                 <h4 class="services-title">Certified Teachers</h4>
                                 <!-- <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="py-[10px]">
-                        <div class="flex items-center justify-center">
+                    <div class="py-[17px]">
+                        <div class="relative items-center justify-center">
                             <div
-                                class="content-center z-1 h-[130px] w-[130px] bg-[blue] line-height: 88px; text-center text-[40px] rounded-[50%] ">
-                                <i class="fa fa-graduation-cap rs-animation-scale-up"></i>
+                                class="content-center z-1 h-[100px] w-[100px] bg-[blue] line-height: 88px; text-center text-[40px] absolute animate-rightToSide rounded-full top-[-23px]">
+                                <i class="fa fa-graduation-cap hover:animate-bounce transition-all text-3xl"></i>
                             </div>
-                            <div
-                                class="content-center bg-[blue] h-[81px] ml-[-46px] rounded-[32px] w-[70%] text-center">
+                            <div class="content-center bg-[blue] h-[61px] rounded-[32px] text-center">
                                 <h4 class="services-title">Certification</h4>
-                                <!-- <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p> -->
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Welcome Section -->
-                <section class="mb-6 p-4 items-center  justify-self-center md:flex md:w-[60%]">
+                <section class="mb-6 p-4 items-center  justify-self-center lg:flex lg:w-[70%]">
                     <img src="./assets/images/proprietres.jpg" alt="Our Proprietress"
-                        class="md:h-[415px] h-[480px] ml-auto mr-auto">
+                        class="md:h-[415px] h-[415px] ml-auto mr-auto">
                     <div class="md:mx-4">
                         <h1 class="font-bold text-center text-primary">Welcome to our school!</h1>
                         <p class="text-center">

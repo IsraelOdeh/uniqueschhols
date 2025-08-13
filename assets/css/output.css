@@ -31,6 +31,7 @@
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -200,6 +201,9 @@
   .top-\[-20\%\] {
     top: -20%;
   }
+  .top-\[-23px\] {
+    top: -23px;
+  }
   .top-\[-27\%\] {
     top: -27%;
   }
@@ -338,11 +342,20 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[61px\] {
+    height: 61px;
+  }
   .h-\[81px\] {
     height: 81px;
   }
   .h-\[90px\] {
     height: 90px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[119px\] {
+    height: 119px;
   }
   .h-\[130px\] {
     height: 130px;
@@ -358,6 +371,9 @@
   }
   .h-\[400px\] {
     height: 400px;
+  }
+  .h-\[415px\] {
+    height: 415px;
   }
   .h-\[480px\] {
     height: 480px;
@@ -382,6 +398,12 @@
   }
   .w-\[90px\] {
     width: 90px;
+  }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[119px\] {
+    width: 119px;
   }
   .w-\[130px\] {
     width: 130px;
@@ -513,6 +535,9 @@
   .rounded-\[50\%\] {
     border-radius: 50%;
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -641,11 +666,17 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .py-\[17px\] {
+    padding-block: 17px;
+  }
   .py-\[20px\] {
     padding-block: 20px;
   }
   .py-\[25px\] {
     padding-block: 25px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[40px\] {
     padding-block: 40px;
@@ -819,6 +850,10 @@
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
   }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
   .group-hover\/menu\:block {
     &:is(:where(.group\/menu):hover *) {
       @media (hover: hover) {
@@ -954,6 +989,11 @@
       outline-style: none;
     }
   }
+  .sm\:w-\[60\%\] {
+    @media (width >= 40rem) {
+      width: 60%;
+    }
+  }
   .sm\:text-2xl {
     @media (width >= 40rem) {
       font-size: var(--text-2xl);
@@ -1028,6 +1068,21 @@
   .md\:pt-\[7\%\] {
     @media (width >= 48rem) {
       padding-top: 7%;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:w-\[60\%\] {
+    @media (width >= 64rem) {
+      width: 60%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
     }
   }
   .lg\:columns-3 {
