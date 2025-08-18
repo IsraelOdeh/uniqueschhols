@@ -3,8 +3,11 @@
         <img src="assets/images/logo.jpg" alt="Unique Schools Logo"
             style="height: inherit; width: 90px; min-width: 90px;" />
     </a>
-    <span id="scrollTitle"
-        class="text-xl  sm:text-2xl font-bold text-primary text-center mx-auto w-auto content-center">
+    <span id="scrollTitle" class="text-xl  sm:text-2xl font-bold text-primary text-center mx-auto w-auto content-center"
+        style="text-shadow: 
+      2px 2px 0 #000, 
+      4px 4px 0 #444,
+      6px 6px 0 #666;">
         Our Unique Children Model Academy
     </span>
     <ul class="hidden md:flex space-x-6 text-white transition-opacity duration-300">
@@ -53,13 +56,13 @@
     </ul>
     <!-- Hamburger menu for mobile -->
     <button id="menu-toggle" onclick="toggleSidebar()"
-        class="md:hidden  px-2 py-1 focus:outline-none text-[#c4c756] border-gray-800 bg-gray-800 border-thin border rounded-[5px] w-[60px] text-[25px] mr-2.5">
+        class="md:hidden  px-2 py-1 focus:outline-none text-[#c4c756]  bg-[#08746c]  rounded-[5px] w-[60px] text-[25px] mr-2.5">
         <i class="fas fa-bars text-[20px]"></i>
     </button>
 </nav>
 
 <div id="sidebar"
-    class="fixed top-0 right-0 h-full w-64 bg-[#c4c756]  gray-800 text-white transform translate-x-full transition-transform duration-300 z-[350052] md:block">
+    class="fixed font-bold top-0 right-0 h-full w-64 bg-[#08746c]  gray-800 text-gray-800 transform translate-x-full transition-transform duration-300 z-[350052] md:block">
 
     <!-- Menu Item with Hoverable Submenu -->
     <div id="mainMenu">
@@ -81,7 +84,8 @@
     </div>
 
     <!-- Submenu -->
-    <div id="submenu1" class="absolute top-0 left-full w-full h-full transition-all duration-300 bg-gray-800">
+    <div id="submenu1"
+        class="absolute top-0 left-full w-full h-full transition-all duration-300 bg-[#08746c] text-gray-800">
         <div class="p-4 border-b border-gray-700 flex justify-between items-center">
             <button onclick="backToMain()" class="text-white">← Back</button>
         </div>
