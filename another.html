@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description"
+            content="Our Unique Children Model Academy is dedicated to building a foundation for lifetime learning through creativity, self-reliance, and global competence.">
+        <meta name="keywords" content="education, school, children, learning, academy, Abuja, Nigeria">
+
+        <title>Our Unique Children Model Academy</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Muli:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Tailwind CSS -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+          -->
+        <link href="assets/css/output.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/site.webmanifest">
+
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('set', 'developer_id.dYzg1YT', true);
+            gtag('config', 'G-SEKJ4E9T4H');
+        </script>
+
+        <style>
+            body {
+                font-family: 'Muli', sans-serif;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Libre Baskerville', serif;
+            }
+
+            .animate-sideToSide {
+                animation: sideToSide 5s ease-in-out infinite alternate;
+            }
+
+            .animate-rightToSide {
+                animation: rightToSide 5s ease-in-out infinite alternate;
+            }
+
+            @keyframes sideToSide {
+                0% {
+                    left: calc(0% - 50px);
+                }
+
+                100% {
+                    left: calc(100% - 50px);
+                }
+            }
+
+            @keyframes rightToSide {
+                0% {
+                    right: calc(0% - 50px);
+                }
+
+                100% {
+                    right: calc(100% - 50px);
+                }
+            }
+
+            .swiper-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .line-bottom {
+                position: relative;
+                display: inline-block;
+            }
+
+            .line-bottom::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+                height: 3px;
+                background-color: #facc15;
+            }
+
+            .overlay {
+                background: rgba(0, 0, 0, 0.5);
+            }
+        </style>
+    </head>
+
+    <body class="bg-gray-100">
+        <!-- Mobile Menu -->
+        <div class="site-mobile-menu hidden fixed inset-0 bg-teal-800 text-white z-[600000]">
+            <div class="site-mobile-menu-header flex justify-end p-4">
+                <button class="menu-toggle text-2xl"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="site-mobile-menu-body p-4">
+                <ul class="site-nav-wrap space-y-4">
+                    <li><a href="index.html" class="text-lg hover:text-yellow-400">Home</a></li>
+                    <li><a href="#" class="text-lg hover:text-yellow-400">About</a></li>
+                    <!-- <li><a href="staff.html" class="text-lg hover:text-yellow-400">Our Staff</a></li> -->
+                    <!-- <li><a href="news.html" class="text-lg hover:text-yellow-400">News</a></li> -->
+                    <li><a href="#" class="text-lg hover:text-yellow-400">Gallery</a></li>
+                    <li><a href="#" class="text-lg hover:text-yellow-400">Contact</a></li>
+                    <li><a href="admissions.html"
+                            class="text-lg bg-yellow-400 text-gray-800 px-4 py-2 rounded hover:bg-yellow-500">Admissions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="site-nav bg-white shadow-md">
+            <!-- <div class="top-bar bg-teal-600 text-white py-2">
+                <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                    <div class="flex space-x-4">
+                        <a href="#" class="flex items-center text-sm"><i class="fas fa-question-circle mr-2"></i><span
+                                class="hidden lg:inline">Have a question?</span></a>
+                        <a href="tel:+2340000000000" class="flex items-center text-sm"><i
+                                class="fas fa-phone mr-2"></i><span class="hidden lg:inline">+234 000 000
+                                0000</span></a>
+                        <a href="mailto:Administator@uniqueschools.com" class="flex items-center text-sm"><i
+                                class="fas fa-envelope mr-2"></i><span
+                                class="hidden lg:inline">Administator@uniqueschools.com</span></a>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="login.html" class="flex items-center text-sm"><i class="fas fa-lock mr-2"></i>Log
+                            In</a>
+                        <a href="register.html" class="flex items-center text-sm"><i
+                                class="fas fa-user mr-2"></i>Register</a>
+                    </div>
+                </div>
+            </div> -->
+            <div
+                class="fixed-nav fixed left-0 right-0 top-0 z-[500000] shadow-md transition transition-ease duration-300">
+                <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                    <a href="index.html" id="scrollElement" class="text-2xl font-bold text-teal-600 h-[90px] w-[90px]">
+                        <!-- Our Unique Academy<span class="text-yellow-400">.</span> -->
+                        <img src="/assets/images/logo.png">
+                    </a>
+                    <ul class="hidden lg:flex space-x-6 items-center">
+                        <li><a href="index.html" class="text-gray-800 hover:text-yellow-400">Home</a></li>
+                        <li><a href="about.html" class="text-gray-800 hover:text-yellow-400">About</a></li>
+                        <li><a href="staff.html" class="text-gray-800 hover:text-yellow-400">Our Staff</a></li>
+                        <li><a href="news.html" class="text-gray-800 hover:text-yellow-400">News</a></li>
+                        <li><a href="gallery.html" class="text-gray-800 hover:text-yellow-400">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-800 hover:text-yellow-400">Contact</a></li>
+                        <li><a href="admissions.html"
+                                class="bg-yellow-400 text-gray-800 px-4 py-2 rounded hover:bg-yellow-500">Enroll Now</a>
+                        </li>
+                    </ul>
+                    <button class="lg:hidden menu-toggle bg-yellow-400 px-4 py-2 rounded"><i
+                            class="fas fa-bars text-2xl text-teal-600"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="untree_co-hero overlay bg-cover bg-center md:h-100vh min-h-[750px] content-center"
+            style="background-image: url('assets/images/hero.jpg');background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class="container mx-auto px-4 py-16 md:py-24 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Learning Center for Your Kids
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                        Our Unique Children Model Academy is dedicated to building a foundation for lifetime learning
+                        through creativity, self-reliance, and global competence.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="200"><a href="admissions.html"
+                            class="bg-yellow-400 text-gray-800 px-6 py-3 rounded hover:bg-yellow-500">Enroll Now</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What We Offer (Icons) -->
+        <div class="untree_co-section py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+                        <i class="fas fa-laptop-code text-4xl text-purple-700 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">ICT Trained</h3>
+                        <p>Equipping students with cutting-edge technology skills for a digital future.</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-book text-4xl text-indigo-800 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Books & Library</h3>
+                        <p>Access to a rich collection of resources to foster a love for reading.</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-user text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Certified Teachers</h3>
+                        <p>Experienced educators dedicated to nurturing every child's potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What We Offer (Classes) -->
+        <div class="untree_co-section bg-gray-50 py-12">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold line-bottom">What We Offer</h2>
+                    <p class="mt-4 max-w-2xl mx-auto">Our programs are designed to foster creativity, self-reliance, and
+                        global competence.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <!-- <i class="fas fa-baby text-4xl text-teal-600 mb-4"></i>
+                          -->
+                        <figure class="">
+                            <img src="assets/images/nursury.jpg" alt="Early Years">
+                        </figure>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Early Years</h3>
+                            <p>A nurturing environment for children aged 3 months and up, fostering early development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <!-- <i class="fas fa-school text-4xl text-teal-600 mb-4"></i> -->
+                        <figure class="">
+                            <img src="assets/images/primary_school.jpg" alt="Primary Schools">
+                        </figure>
+                        <h3 class="text-xl font-bold mb-2">Primary Schools</h3>
+                        <p>Inquiry-based curriculum for ages 6-11 to spark a lifelong love of learning.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <!-- <i class="fas fa-graduation-cap text-4xl text-teal-600 mb-4"></i> -->
+                        <figure class="">
+                            <img src="assets/images/junior_sec_school.jpg" alt="Junior School">
+                        </figure>
+                        <h3 class="text-xl font-bold mb-2">Junior School</h3>
+                        <p>Structured to nurture independence and academic excellence for young learners.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                        <!-- <i class="fas fa-university text-4xl text-teal-600 mb-4"></i> -->
+                        <figure class="">
+                            <img src="assets/images/secondary_school.jpg" alt="Senior Secondary School">
+                        </figure>
+                        <h3 class="text-xl font-bold mb-2">Secondary School</h3>
+                        <p>Opportunities-packed environment for students aged 16-18 to thrive.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fas fa-certificate text-4xl text-teal-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Certification</h3>
+                        <p>Recognized qualifications to prepare students for future success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="untree_co-section overlay bg-cover bg-center py-16 md:h-100vh min-h-[750px] content-center"
+            style="background-image: url('assets/images/students.jpeg'); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-aos="fade-up">Education for Tomorrow's
+                    Leaders</h2>
+                <p class="text-lg text-white mb-6 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Join us to build a foundation for lifetime learning with cutting-edge performance and
+                    state-of-the-art technology.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200"><a href="admissions.html"
+                        class="bg-yellow-400 text-gray-800 px-6 py-3 rounded hover:bg-yellow-500">Enroll Now</a></p>
+            </div>
+        </div>
+
+        <!-- About Us -->
+        <div class="untree_co-section py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                        <h2 class="text-3xl font-bold line-bottom mb-4" data-aos="fade-up">About Us</h2>
+                        <p class="mb-4" data-aos="fade-up" data-aos-delay="100">
+                            Our Unique Children Model Academy is dedicated to building a foundation for lifetime
+                            learning through creativity, self-reliance, self-confidence, personal competence, and a
+                            spirit of service to humanity.
+                        </p>
+                        <ul class="list-none space-y-2 mb-6" data-aos="fade-up" data-aos-delay="200">
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i> World-class
+                                teaching and learning institution</li>
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i> Cutting-edge
+                                performance</li>
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i>
+                                State-of-the-art technological development</li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div data-aos="fade-up" data-aos-delay="0">
+                                <span class="text-4xl font-bold block">200</span>
+                                <span class="text-sm">Learners</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <span class="text-4xl font-bold block">22</span>
+                                <span class="text-sm">Teachers</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="200">
+                                <span class="text-4xl font-bold block">15</span>
+                                <span class="text-sm">Awards</span>
+                            </div>
+                        </div>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            <a href="admissions.html"
+                                class="bg-yellow-400 text-gray-800 px-4 py-2 rounded hover:bg-yellow-500 mr-2">Admission</a>
+                            <a href="about.html"
+                                class="border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-gray-800">Learn
+                                More</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-full" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/images/proprietres.jpg" alt="Our Proprietress"
+                        class="w-full h-64 md:h-96 object-contain rounded-lg lg:w-1/2 w-full">
+                    <div class="md:mx-4 lg:w-1/2 w-full">
+                        <h2 class="font-bold text-center text-primary">Welcome to our school!</h2>
+                        <p class="text-center">
+
+                            On behalf of the entire school community, I warmly welcome you. As the proprietress, I am
+                            proud
+                            to lead a place where excellence, integrity, and creativity thrive. Our dedicated staff,
+                            rich
+                            learning environment, and strong moral values ensure every child grows with confidence and
+                            purpose. Thank you for visiting — we look forward to being part of your child’s
+                            journey to greatness!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <!-- <div class="untree_co-section bg-gray-50 py-12">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold line-bottom">School News</h2>
+                    <p class="mt-4 max-w-2xl mx-auto">Stay updated with the latest events and achievements at Our Unique
+                        Children Model Academy.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/students.jpeg" alt="News Image" class="w-1/3 object-cover rounded-l-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2"><a href="#" class="hover:text-yellow-400">Latest School
+                                    Event Updates</a></h3>
+                            <div class="text-sm text-gray-600 mb-2"><i class="fas fa-calendar mr-2"></i>October 2025
+                            </div>
+                            <p>Exciting events and activities happening at our academy this academic year.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/images/application.jpeg" alt="News Image"
+                            class="w-1/3 object-cover rounded-l-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2"><a href="#" class="hover:text-yellow-400">Student
+                                    Achievements Highlighted</a></h3>
+                            <div class="text-sm text-gray-600 mb-2"><i class="fas fa-calendar mr-2"></i>October 2025
+                            </div>
+                            <p>Celebrating the outstanding accomplishments of our students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Why Choose Us -->
+        <div class="untree_co-section py-12">
+            <div class="container mx-auto px-4">
+                <!-- <div class="flex flex-wrap"> -->
+                <div class="w-full mb-8 lg:mb-0" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold line-bottom mb-4">Testimonials</h3>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                <p class="text-gray-700 italic">"Outstanding environment for learning, institution
+                                    ready to set the pace."</p>
+                                <h4 class="text-black mt-4 font-bold text-lg">— Emma Odoh</h4>
+                            </div>
+                            <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                <p class="text-gray-700 italic">"The management are interested in the core
+                                    foundation of education with attention to details."</p>
+                                <h4 class="text-black mt-4 font-bold text-lg">— Beatrice Kalu</h4>
+                            </div>
+                            <div class="swiper-slide p-6 bg-white shadow-md rounded-lg text-center">
+                                <p class="text-gray-700 italic">"Etiam non elit nec augue tempor gravida et sed
+                                    velit."</p>
+                                <h4 class="text-black mt-4 font-bold text-lg">— Luise Henrikes</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination mt-4"></div>
+                    </div>
+                </div>
+                <div class="w-full" data-aos="fade-up" data-aos-delay="100">
+                    <!-- <h3 class="text-2xl font-bold line-bottom mb-4">Why Choose Us</h3> -->
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg shadow-md">
+                            <h2 class="text-xl font-bold p-4 bg-yellow-400 text-gray-800 rounded-t-lg cursor-pointer"
+                                data-toggle="collapse" data-target="#collapseOne">Our Unique Mantra</h2>
+                            <div id="collapseOne" class="p-6 hidden">
+                                <div class="flex">
+                                    <!-- <img src="assets/images/download.jpg" alt="Mantra Image"
+                                        class="w-1/3 h-32 object-cover rounded-lg mr-4"> -->
+                                    <p>Education is the key to unlocking the world. <br> Our passports to the
+                                        future. <br> Our passports to freedom <br> Which begins in the classroom.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md">
+                            <h2 class="text-xl font-bold p-4 bg-yellow-400 text-gray-800 rounded-t-lg cursor-pointer"
+                                data-toggle="collapse" data-target="#collapseTwo">Our Anthem</h2>
+                            <div id="collapseTwo" class="p-6 hidden">
+                                <div class="flex">
+                                    <!-- <img src="assets/images/students.jpeg" alt="Anthem Image"
+                                        class="w-1/3 h-32 object-cover rounded-lg mr-4"> -->
+                                    <p>
+                                        <b>Stanza 1</b><br>
+                                        The Unique Children academy<br>
+                                        We are future champions<br>
+                                        Discipline Humility,<br>
+                                        Knowledge, Wisdom, Obedience.<br><br>
+                                        We are Unique.<br>
+                                        We are Unique.<br>
+                                        We are Unique.<br>
+                                        We are set to learn for life.<br><br>
+                                        <b>Stanza 2</b><br>
+                                        With God guidance we onward march<br>
+                                        As we move from height to heights<br>
+                                        Our future is great and bright<br>
+                                        With a solid foundation.<br><br>
+                                        We are Unique.<br>
+                                        We are Unique.<br>
+                                        We are Unique.<br>
+                                        We are set to learn for life.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md">
+                            <h2 class="text-xl font-bold p-4 bg-yellow-400 text-gray-800 rounded-t-lg cursor-pointer"
+                                data-toggle="collapse" data-target="#collapseThree">Our Pledge</h2>
+                            <div id="collapseThree" class="p-6 hidden">
+                                <div class="flex">
+                                    <!-- <img src="assets/images/application.jpeg" alt="Pledge Image"
+                                        class="w-1/3 h-32 object-cover rounded-lg mr-4"> -->
+                                    <p>
+                                        I pledge to our Unique Children Model Academy,<br>
+                                        A citadel of learning.<br>
+                                        To do my best in all locations.<br>
+                                        I promise to obey the rules in my class and in our school.<br>
+                                        To show respect and care about others<br>
+                                        To be God fearing, discipline, hardworking and a team player<br>
+                                        Through Academic and Moral excellence.<br>
+                                        So help me God.<br>
+                                        Amen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="relative min-h-14">
+            <!-- <h3 class="text-xl font-bold mb-4">Gallery</h3> -->
+            <div class="elfsight-app-f37a9891-a0c7-42b5-8497-8a4f5afb54fa w-full" data-elfsight-app-lazy>
+            </div>
+            <div class="absolute bg-dark bottom-0 left-0 right-0 z-[100000] h-14 bg-gray-100"></div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="site-footer bg-teal-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Our Unique Academy<span class="text-yellow-400">.</span></h3>
+                        <p>Building a foundation for lifetime learning with creativity, self-reliance, and global
+                            competence.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">About</a></li>
+                            <!-- <li><a href="staff.html" class="hover:text-yellow-400">Our Staff</a></li> -->
+                            <!-- <li><a href="news.html" class="hover:text-yellow-400">News</a></li> -->
+                            <li><a href="#" class="hover:text-yellow-400">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>No.31/32 Peace Street, Cooperative Garden City
+                            Estate, Lugbe-Abuja</p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+2340000000000">+234 000 000 0000</a></p>
+                        <p><i class="fas fa-envelope mr-2"></i><a
+                                href="mailto:Administator@uniqueschools.com">Administator@uniqueschools.com</a></p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <p>&copy;
+                        <script>document.write(new Date().getFullYear());</script> Our Unique Children Model Academy.
+                        All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'slide',
+                once: true
+            });
+
+            // Swiper Initialization
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+
+            // Mobile Menu Toggle
+            Array.from(document.getElementsByClassName('menu-toggle')).forEach(function (element) {
+                element.addEventListener('click', function () {
+                    document.querySelector('.site-mobile-menu').classList.toggle('hidden');
+                });
+            });
+
+            // Accordion Toggle
+            document.querySelectorAll('[data-toggle="collapse"]').forEach(function (element) {
+                element.addEventListener('click', function () {
+                    const target = document.querySelector(this.getAttribute('data-target'));
+                    target.classList.toggle('hidden');
+                    this.classList.toggle('bg-yellow-400', 'text-gray-800', 'bg-teal-600', 'text-white');
+                });
+            });
+
+            // Smooth Scrolling
+            document.querySelectorAll('a[href*="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector('html, body').animate({
+                        scrollTop: document.querySelector(this.getAttribute('href')).offsetTop
+                    }, 800);
+                });
+            });
+
+
+            const scrollElement = document.getElementById('scrollElement');
+            const navElement = document.querySelector('.fixed-nav');
+            //const scrollTitle = document.getElementById('scrollTitle');
+
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > lastScrollTop) {
+                    // Scrolling down
+                    scrollElement.classList.add('opacity-0');
+                    scrollElement.classList.add('h-[60px]');
+                    scrollElement.classList.remove('h-[90px]');
+
+                    navElement.classList.add('bg-teal-800')
+
+                    //scrollTitle.classList.add('opacity-0');
+                    //scrollTitle.classList.add('h-[60px]');
+                    //scrollTitle.classList.remove('h-[90px]');
+                } else if (currentScroll == 0) {
+                    // Scrolling up
+                    scrollElement.classList.remove('opacity-0');
+                    scrollElement.classList.remove('h-[60px]');
+                    scrollElement.classList.add('h-[90px]');
+
+                    navElement.classList.remove('bg-teal-800');
+
+                    //scrollTitle.classList.remove('opacity-0');
+                    //scrollTitle.classList.remove('h-[60px]');
+                    //scrollTitle.classList.add('h-[90px]');
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
+            });
+
+        </script>
+    </body>
+
+</html>

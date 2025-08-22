@@ -26,7 +26,8 @@
 
 
 h2 {
-  font-family: var(--font-chubbo);
+  font-family: cursive;
+  /* var(--font-chubbo); */
   font-weight: 700;
   font-size: 30px;
 }
