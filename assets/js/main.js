@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 const scrollElement = document.getElementById('scrollElement');
+                const navElement = document.querySelector('.fixed-nav');
                 const scrollTitle = document.getElementById('scrollTitle');
 
                 let lastScrollTop = 0;
@@ -15,37 +16,51 @@ document.addEventListener("DOMContentLoaded", function () {
                     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
                     if (currentScroll > lastScrollTop) {
                         // Scrolling down
-                        scrollElement.classList.add('opacity-0');
+                        scrollElement.classList.add('hidden');
                         scrollElement.classList.add('h-[60px]');
                         scrollElement.classList.remove('h-[90px]');
 
-                        scrollTitle.classList.add('opacity-0');
+                        navElement.classList.add('bg-teal-800')
+                        navElement.classList.remove('text-gray-800');
+                        navElement.classList.add('text-white');
+
+                        scrollTitle.classList.remove('hidden');
                         scrollTitle.classList.add('h-[60px]');
                         scrollTitle.classList.remove('h-[90px]');
-                    } else {
+                    } else if (currentScroll == 0) {
                         // Scrolling up
-                        scrollElement.classList.remove('opacity-0');
+                        scrollElement.classList.remove('hidden');
                         scrollElement.classList.remove('h-[60px]');
                         scrollElement.classList.add('h-[90px]');
 
-                        scrollTitle.classList.remove('opacity-0');
+                        navElement.classList.remove('bg-teal-800');
+                        navElement.classList.add('text-gray-800');
+                        navElement.classList.remove('text-white');
+
+                        scrollTitle.classList.add('hidden');
                         scrollTitle.classList.remove('h-[60px]');
                         scrollTitle.classList.add('h-[90px]');
                     }
                     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
                 });
 
-                const div = document.getElementById('sidebar');
-                div.addEventListener('click', function (e) {
-                    const target = e.target.closest('a');
-                    if (target && div.contains(target)) {
-                        {
-                            if (sidebarOpen) {
-                                toggleSidebar();
-                            }
-                        }
-                    }
+
+                // Mobile Menu Toggle
+                Array.from(document.getElementsByClassName('menu-toggle')).forEach(function (element) {
+                    element.addEventListener('click', function () {
+                        document.querySelector('.site-mobile-menu').classList.toggle('hidden');
+                    });
                 });
+
+                // Accordion Toggle
+                document.querySelectorAll('[data-toggle="collapse"]').forEach(function (element) {
+                    element.addEventListener('click', function () {
+                        const target = document.querySelector(this.getAttribute('data-target'));
+                        target.classList.toggle('hidden');
+                        this.classList.toggle('bg-yellow-400', 'text-gray-800', 'bg-teal-600', 'text-white');
+                    });
+                });
+
             }
         })
         .catch(error => console.error('Error loading navbar:', error));

@@ -25,16 +25,16 @@
 
 
 
-h2 {
-  font-family: cursive;
-  /* var(--font-chubbo); */
-  font-weight: 700;
-  font-size: 30px;
-}
+/*  */
 
 /* h1,
 h2,
-h3,
+h3,h2 {
+  font-family: cursive;
+  /* var(--font-chubbo); 
+  font-weight: 700;
+  font-size: 30px;
+}
 h4,
 h5 {
   font-family: 'Poppins', sans-serif;
