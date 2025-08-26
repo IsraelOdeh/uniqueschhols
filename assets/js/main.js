@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         scrollElement.classList.remove('h-[90px]');
 
                         navElement.classList.add('bg-teal-800')
-                        navElement.classList.remove('text-gray-800');
+                        navElement.classList.remove('text-[#ee1623]');
                         navElement.classList.add('text-white');
 
                         scrollTitle.classList.remove('hidden');
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         scrollElement.classList.add('h-[90px]');
 
                         navElement.classList.remove('bg-teal-800');
-                        navElement.classList.add('text-gray-800');
+                        navElement.classList.add('text-[#ee1623]');
                         navElement.classList.remove('text-white');
 
                         scrollTitle.classList.add('hidden');
@@ -61,6 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
                     });
                 });
 
+                // Smooth scrolling for navigation links
+                document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector('.site-mobile-menu').classList.add('hidden');
+                        const hash = this.getAttribute('href').split('#')[1];
+                        if (hash) {
+                            const target = document.getElementById(hash);
+                            if (target) {
+                                target.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+
             }
         })
         .catch(error => console.error('Error loading navbar:', error));
@@ -74,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
         .catch(error => console.error('Error loading navbar:', error));
+
 
 
 });
@@ -125,12 +144,3 @@ function backToMain() {
 
 
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
