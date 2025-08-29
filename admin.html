@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Manage Blog - Admin</title>
+        <link href="assets/css/output.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-gray-100 min-h-screen">
+        <div id="divCanopy"></div>
+
+        <section class="container mx-auto px-4 py-12">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h1 class="text-2xl font-bold mb-6">Add / Edit Blog Post</h1>
+
+                <form action="/blogs/save" method="POST" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Title</label>
+                        <input type="text" name="title"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Date</label>
+                        <input type="date" name="date"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Image</label>
+                        <input type="file" name="image" accept="image/*" class="w-full">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block mb-2 font-medium">Content</label>
+                        <textarea name="content" rows="6"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400"></textarea>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button type="submit"
+                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-6 py-2 rounded">Save</button>
+                        <button type="reset"
+                            class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div id="footCanopy"></div>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

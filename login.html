@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - Admin</title>
+        <link href="assets/css/output.css" rel="stylesheet">
+    </head>
+
+    <body class="flex items-center justify-center h-screen bg-gray-100">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <h1 class="text-2xl font-bold mb-6 text-center">Admin Login</h1>
+            <form action="/login" method="POST">
+                <div class="mb-4">
+                    <label class="block mb-2 text-sm font-medium">Email</label>
+                    <input type="email" name="email"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-yellow-400"
+                        required>
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2 text-sm font-medium">Password</label>
+                    <input type="password" name="password"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-yellow-400"
+                        required>
+                </div>
+                <button type="submit"
+                    class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 rounded">Login</button>
+            </form>
+        </div>
+    </body>
+
+</html>
