@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         navElement.classList.add('bg-teal-800')
                         navElement.classList.remove('text-[#ee1623]');
-                        navElement.classList.add('text-white');
+                        // navElement.classList.add('text-black');
 
                         scrollTitle.classList.remove('hidden');
                         scrollTitle.classList.add('h-[60px]');
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         navElement.classList.remove('bg-teal-800');
                         navElement.classList.add('text-[#ee1623]');
-                        navElement.classList.remove('text-white');
+                        // navElement.classList.remove('text-black');
 
                         scrollTitle.classList.add('hidden');
                         scrollTitle.classList.remove('h-[60px]');

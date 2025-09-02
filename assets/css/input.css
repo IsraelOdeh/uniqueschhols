@@ -23,7 +23,11 @@
 
 }
 
-
+body {
+  padding-bottom: 311px;
+  position: relative;
+  min-height: 100vh;
+}
 
 /*  */
 

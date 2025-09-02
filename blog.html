@@ -6,13 +6,18 @@
         <title>Events & Blogs - Our Unique Children Model Academy</title>
         <link href="assets/css/output.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     </head>
 
-    <body class="bg-gray-50">
+    <body class="bg-gray-50" style="
+    padding-bottom: 311px;
+    position: relative;
+    min-height: 100vh;
+">
         <div id="divCanopy"></div>
 
         <!-- Hero -->
-        <section class="bg-yellow-400 py-16 text-center">
+        <section class="bg-yellow-400 py-16 text-center min-h-[320px] content-center">
             <h1 class="text-4xl font-bold text-gray-800">Events & Blog</h1>
             <p class="text-gray-700 mt-2">Stay updated with news, activities, and stories from our Academy.</p>
         </section>
@@ -30,17 +35,136 @@
                         <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
                         <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
                             celebration.</p>
-                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                        <a href="blog-details.html" class="text-yellow-500 mt-3 inline-block">Read more →</a>
                     </div>
                 </article>
 
                 <!-- More blog cards dynamically here -->
-
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="blog-details.html" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="blog-details.html" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
             </div>
         </section>
 
+        <!-- Blog Modal -->
+        <div id="blogModal"
+            class="fixed inset-0 bg-[#000000bf] bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div id="blog"
+                class="bg-white rounded-lg shadow-lg max-w-2xl w-full p-8 relative max-h-[65vh] overflow-x-auto">
+                <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">
+                    &times;
+                </button>
+                <h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+                <p id="modalDate" class="text-sm text-gray-600 mb-2"></p>
+                <img id="modalImage" src="" alt="" class="w-full h-48 object-cover mb-4 rounded">
+                <p id="modalContent" class="text-gray-700"></p>
+                <div id="modalGallery" class="mt-4 grid grid-cols-2 gap-2">
+                    <!-- Gallery images will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+
         <div id="footCanopy"></div>
+
         <script src="assets/js/main.js"></script>
+        <script>
+            // Sample blog data (replace with dynamic data as needed)
+            const blogPosts = [
+                {
+                    title: "Cultural Day Celebration",
+                    date: "August 2025",
+                    image: "assets/images/students.jpeg",
+                    content: "Our students showcased cultural dances, food, and attire in a colorful celebration. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    gallary: [
+                        {
+                            image: "assets/images/students.jpeg",
+                            description: "lorem Ipsum"
+                        },
+                        {
+                            image: "assets/images/nursury.jpg",
+                            description: "lorem Ipsum"
+                        },
+                        {
+                            image: "assets/images/students.jpeg",
+                            description: "lorem Ipsum"
+                        },
+                    ]
+                }
+                // Add more blog objects if needed
+            ];
+
+            // Attach click event to all "Read more" links
+            document.querySelectorAll('a[href="#"], a[href="blog-details.html"]').forEach((link, idx) => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const post = blogPosts[0]; // For demo, always show first post
+                    document.getElementById('modalTitle').textContent = post.title;
+                    document.getElementById('modalDate').textContent = post.date;
+                    document.getElementById('modalImage').src = post.image;
+                    document.getElementById('modalImage').alt = post.title;
+                    document.getElementById('modalContent').textContent = post.content;
+                    document.getElementById('modalGallery').innerHTML = '';
+                    post.gallary.forEach(img => {
+                        const divElem = document.createElement('div');
+                        divElem.className = 'cursor-pointer justify-items-center text-center';
+
+                        const imgElem = document.createElement('img');
+                        imgElem.src = img.image;
+                        imgElem.alt = img.description;
+                        imgElem.style.objectFit = 'cover';
+                        imgElem.style.maxHeight = '230px';
+                        imgElem.style.objectFit = 'contain';
+                        imgElem.style.height = 'auto';
+                        imgElem.style.width = 'auto';
+                        imgElem.className = 'w-full h-24 object-cover rounded';
+
+                        const descElem = document.createElement('p');
+                        descElem.innerText = img.description;
+
+                        divElem.appendChild(imgElem);
+                        divElem.appendChild(descElem);
+
+                        document.getElementById('modalGallery').appendChild(divElem);
+                    });
+
+                    document.getElementById('blogModal').classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Lock scroll
+                });
+            });
+
+            // Close modal
+            document.getElementById('closeModal').onclick = function () {
+                document.getElementById('blogModal').classList.add('hidden');
+                document.body.style.overflow = ''; // Unlock scroll
+            };
+            // Close modal on outside click
+            document.getElementById('blogModal').onclick = function (e) {
+                if (e.target === this) {
+                    this.classList.add('hidden');
+                    document.body.style.overflow = ''; // Unlock scroll
+                }
+            };
+        </script>
     </body>
 
 </html>

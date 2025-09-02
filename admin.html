@@ -7,49 +7,305 @@
         <link href="assets/css/output.css" rel="stylesheet">
     </head>
 
-    <body class="bg-gray-100 min-h-screen">
+    <body class="bg-gray-100 min-h-screen pt-[100px]">
         <div id="divCanopy"></div>
 
+        <!-- Modal Trigger Button -->
+        <div class="container mx-auto px-4 py-12">
+            <button id="openBlogModal" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-6 py-2 rounded shadow">
+                Add / Edit Blog Post
+            </button>
+        </div>
         <section class="container mx-auto px-4 py-12">
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold mb-6">Add / Edit Blog Post</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+                <!-- Blog Card -->
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <button
+                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-4 py-2 rounded mr-2 mt-3 inline-block">View</button>
+                        <button
+                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-4 py-2 rounded mt-3 inline-block">Edit</button>
+                    </div>
+                </article>
+
+                <!-- More blog cards dynamically here -->
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="#" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="assets/images/students.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 hover:text-yellow-400"><a href="#">Cultural Day
+                                Celebration</a></h2>
+                        <p class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> August 2025</p>
+                        <p class="text-gray-700">Our students showcased cultural dances, food, and attire in a colorful
+                            celebration.</p>
+                        <a href="blog-details.html" class="text-yellow-500 mt-3 inline-block">Read more →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="blogModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg relative">
+                <button id="closeBlogModal"
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+                <h1 class="text-2xl font-bold mb-6">Add / Edit Blog Post</h1>
                 <form action="/blogs/save" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label class="block mb-2 font-medium">Title</label>
                         <input type="text" name="title"
                             class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
                     </div>
-
                     <div class="mb-4">
                         <label class="block mb-2 font-medium">Date</label>
                         <input type="date" name="date"
                             class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
                     </div>
-
                     <div class="mb-4">
                         <label class="block mb-2 font-medium">Image</label>
                         <input type="file" name="image" accept="image/*" class="w-full">
                     </div>
-
                     <div class="mb-6">
                         <label class="block mb-2 font-medium">Content</label>
                         <textarea name="content" rows="6"
                             class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400"></textarea>
                     </div>
-
-                    <div class="flex gap-4">
-                        <button type="submit"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-6 py-2 rounded">Save</button>
-                        <button type="reset"
-                            class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded">Reset</button>
-                    </div>
+                    <div class="flex gap-4"></div>
+                    <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-6 py-2 rounded">Save
+                    </button>
+                    <button type="reset" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded">Reset
+                    </button>
                 </form>
             </div>
-        </section>
+        </div>
+
+
+        <!-- View Blog Modal -->
+        <div id="viewBlogModal"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg relative">
+                <button id="closeViewBlogModal"
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+                <h1 id="viewBlogTitle" class="text-2xl font-bold mb-4">Blog Title</h1>
+                <p id="viewBlogDate" class="text-sm text-gray-600 mb-2"><i class="fa fa-calendar mr-2"></i> Blog Date
+                </p>
+                <img id="viewBlogImage" src="" alt="Blog Image" class="w-full h-48 object-cover mb-4">
+                <div id="viewBlogContent" class="text-gray-700 mb-4">Blog content goes here.</div>
+                <button id="closeViewBlogModalBtn"
+                    class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded">Close</button>
+            </div>
+        </div>
+
+        <!-- Edit Blog Modal -->
+        <div id="editBlogModal"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg relative">
+                <button id="closeEditBlogModal"
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+                <h1 class="text-2xl font-bold mb-6">Edit Blog Post</h1>
+                <form id="editBlogForm" action="/blogs/update" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="id" id="editBlogId">
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Title</label>
+                        <input type="text" name="title" id="editBlogTitle"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Date</label>
+                        <input type="date" name="date" id="editBlogDate"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2 font-medium">Image</label>
+                        <input type="file" name="image" id="editBlogImage" accept="image/*" class="w-full">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block mb-2 font-medium">Content</label>
+                        <textarea name="content" id="editBlogContent" rows="6"
+                            class="w-full border rounded px-3 py-2 focus:ring focus:border-yellow-400"></textarea>
+                    </div>
+                    <div class="flex gap-4"></div>
+                    <button type="submit"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-6 py-2 rounded">Update</button>
+                    <button type="button" id="cancelEditBlog"
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
 
         <div id="footCanopy"></div>
         <script src="assets/js/main.js"></script>
+        <script>
+            const openBtn = document.getElementById('openBlogModal');
+            const closeBtn = document.getElementById('closeBlogModal');
+            const modal = document.getElementById('blogModal');
+
+            openBtn.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+
+
+            const editModal = document.getElementById('editBlogModal');
+            const closeEditBtn = document.getElementById('closeEditBlogModal');
+            const cancelEditBtn = document.getElementById('cancelEditBlog');
+            document.querySelectorAll('button').forEach(btn => {
+                if (btn.textContent.trim() === 'Edit') {
+                    btn.addEventListener('click', () => {
+                        // Populate form fields here if needed
+                        editModal.classList.remove('hidden');
+                    });
+                }
+            });
+            closeEditBtn.addEventListener('click', () => {
+                editModal.classList.add('hidden');
+            });
+            cancelEditBtn.addEventListener('click', () => {
+                editModal.classList.add('hidden');
+            });
+            window.addEventListener('click', (e) => {
+                if (e.target === editModal) {
+                    editModal.classList.add('hidden');
+                }
+            });
+
+
+            const viewModal = document.getElementById('viewBlogModal');
+            const closeViewBtn = document.getElementById('closeViewBlogModal');
+            const closeViewModalBtn = document.getElementById('closeViewBlogModalBtn');
+            document.querySelectorAll('button').forEach(btn => {
+                if (btn.textContent.trim() === 'View') {
+                    btn.addEventListener('click', () => {
+                        // Example: populate modal fields dynamically if needed
+                        // document.getElementById('viewBlogTitle').textContent = '...';
+                        // document.getElementById('viewBlogDate').textContent = '...';
+                        // document.getElementById('viewBlogImage').src = '...';
+                        // document.getElementById('viewBlogContent').textContent = '...';
+                        viewModal.classList.remove('hidden');
+                    });
+                }
+            });
+            closeViewBtn.addEventListener('click', () => {
+                viewModal.classList.add('hidden');
+            });
+            closeViewModalBtn.addEventListener('click', () => {
+                viewModal.classList.add('hidden');
+            });
+            window.addEventListener('click', (e) => {
+                if (e.target === viewModal) {
+                    viewModal.classList.add('hidden');
+                }
+            });
+
+
+        </script>
     </body>
 
 </html>
