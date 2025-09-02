@@ -24,9 +24,15 @@
 }
 
 body {
-  padding-bottom: 311px;
+  padding-bottom: 755px;
   position: relative;
   min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 311px;
+  }
 }
 
 /*  */
